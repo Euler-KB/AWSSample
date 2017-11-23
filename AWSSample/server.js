@@ -38,6 +38,8 @@ try {
         //  start server
         startServer();
 
+    }).catch(err => {
+        console.log('Failed connecting to database - ' + err.toString() );
     });
 
     function setupMiddleware() {
