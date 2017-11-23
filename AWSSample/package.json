@@ -7,7 +7,7 @@
     "name": "Euler-KB"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "npm install && node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
