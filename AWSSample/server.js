@@ -9,6 +9,7 @@ var app = express();
 
 const sequelize = new Sequelize('books_db', 'root', 'Tywoon123', {
     host: 'aawkysx9kef8el.ckslkf27xn1r.us-east-2.rds.amazonaws.com',
+    port: 3306,
     dialect: 'mysql'
 });
 
@@ -19,8 +20,6 @@ const Books = sequelize.define('book', {
 
 }, {
         freezeTableName: true,
-        underscored: true,
-        createdAt: 'date_created'
     });
 
 sequelize.sync().then(() => {
