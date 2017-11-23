@@ -51,7 +51,7 @@ try {
         app.get('/', (req, res) => {
 
             Books.findAll().then(books => {
-                res.status(200).end(books);
+                res.send(books);
             });
 
         });
@@ -60,9 +60,9 @@ try {
 
             let book = req.body;
             Books.create(book).then(instance => {
-                res.send(201, instance);
+                res.status(201)(instance);
             }).catch(err => {
-                res.send(400, err.toString());
+                res.status(400).send(err.toString());
             });
 
 
