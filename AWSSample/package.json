@@ -1,0 +1,9 @@
+{
+  "name": "awssample",
+  "version": "0.0.0",
+  "description": "AWSSample",
+  "main": "server.js",
+  "author": {
+    "name": "Euler-KB"
+  }
+}
