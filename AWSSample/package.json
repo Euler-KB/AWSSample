@@ -5,5 +5,8 @@
   "main": "server.js",
   "author": {
     "name": "Euler-KB"
+  },
+  "scripts": {
+    "start" : "node server.js"
   }
 }

@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AWSSample", "AWSSample\AWSSample.njsproj", "{22582213-820F-4DF1-A8D5-9534E7013012}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".ebextensions", ".ebextensions", "{42010FD8-4EC7-4D2E-97F8-7C285A92E7DC}"
+	ProjectSection(SolutionItems) = preProject
+		nodecommand.config = nodecommand.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
